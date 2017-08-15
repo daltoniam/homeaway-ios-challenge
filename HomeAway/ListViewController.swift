@@ -31,6 +31,7 @@ class ListViewController: UIViewController, ListViewDelegate {
         reload()
     }
 
+    //hit the SeatGeekService
     func queryEvents(query: String) {
         listView.startLoading()
         SeatGeekService.shared.getEvents(query: query, completion: {[weak self] (eventObj, error) -> (Void) in
@@ -50,6 +51,7 @@ class ListViewController: UIViewController, ListViewDelegate {
         })
     }
     
+    //reload the models on view will appears so if they favorited something it will show in the list
     func reload() {
         var models = [FeedViewModel]()
         for item in listView.dataManager.items {

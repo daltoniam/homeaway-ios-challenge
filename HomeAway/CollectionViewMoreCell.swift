@@ -42,6 +42,7 @@ class CollectionViewMoreCell: UICollectionViewCell, SourceCellProtocol {
         //doesn't have to do anything!
     }
     
+    //normally called by the updateDisplay: method of CollectionViewManager to start and stop the animation
     func start() {
         loadingView.isHidden = false
         loadingView.start()

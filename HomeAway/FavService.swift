@@ -9,7 +9,7 @@
 //  If this was going to store thousands of records it would make sense to add some SQL calls, but for such a simple app
 //  this should be fine.
 //  This class also favors the map over an array since look ups are going to be far more frequent then inserts.
-//  An argument might be made to just iterate an array since there are only a few items, but that would need some benchmarking time.
+//  An argument might be made to just iterate an array since there are only a few items (CPU spatial caching and such), but that would need some benchmarking time to prove which would be more faster.
 
 import Foundation
 

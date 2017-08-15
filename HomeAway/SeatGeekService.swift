@@ -7,7 +7,6 @@
 //
 //
 // This is our API class to handle Seat Geek requests.
-// It
 
 import Foundation
 
